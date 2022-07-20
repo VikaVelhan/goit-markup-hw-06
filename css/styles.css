@@ -793,6 +793,7 @@ textarea::placeholder {
   margin-bottom: 4px;
 }
 .label-comment {
+  display: block;
   margin-bottom: 20px;
 }
 .comment {
