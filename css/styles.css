@@ -765,10 +765,14 @@ header {
   transition: border var(--animation);
   cursor: pointer;
 }
-
+.modal-position-icon:focus-within {
+  outline: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
 .modal-position-icon:focus-within > .modal-icon {
   fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
+
   cursor: pointer;
 }
 
