@@ -765,12 +765,13 @@ header {
   transition: border var(--animation);
   cursor: pointer;
 }
-.modal-position-icon:focus-within {
+.form-input:focus-within,
+.comment:focus-within {
   outline: none;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
-.modal-position-icon:focus-within > .modal-icon {
+.form-input:focus-within + .modal-icon {
   fill: var(--accent-color);
 
   cursor: pointer;
@@ -835,9 +836,7 @@ textarea::placeholder {
   outline: 2px solid var(--accent-color);
   outline-offset: -2px;
 }
-.comment:focus {
-  border: 1px solid var(--accent-color);
-}
+
 .modal-form-button {
   display: block;
   margin-left: auto;
